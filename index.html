@@ -48,7 +48,7 @@
               <li><a href='/satisfaction/introduction'>Introduction</a></li>
               <li><a href='/satisfaction/data'>Data</a></li>
               <li><a href='/satisfaction/progress'>Progress</a></li>
-              <li><a href='/satisfaction/surveyors'>Progress</a></li>
+              <li><a href='/satisfaction/surveyors'>Surveyors</a></li>
               <li><a href='/satisfaction/results'>Results</a></li>
               <li><a href='/satisfaction/map'>Map</a></li>
             </ul>
@@ -72,9 +72,12 @@
 
 <div id="calendar">
 
-<iframe  width="1200" height="950" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xA0J5yhE_TvdseNBuf7wxCVIfOcxEuuEotAEtExLH0w/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-
+<iframe  width="100%" class="schedule" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xA0J5yhE_TvdseNBuf7wxCVIfOcxEuuEotAEtExLH0w/pubhtml?gid=0&single=false&widget=false&headers=false&rm=minimal&frameborder=0&range=A1:L32&chrome=false&output=html&gridlines=false"></iframe>
 </div>
+
+<script type="text/javascript" language="javascript"> 
+$('.schedule').css('height', $(window).height()+'px');
+</script>
 
 </body>
 
