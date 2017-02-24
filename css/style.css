@@ -1,3 +1,7 @@
+body {
+    font-family: Open Sans, Helvetica, sans-serif;
+}
+
 /* Navbar styling */
 .navbar {
     background: #084c8d;
