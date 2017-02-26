@@ -11,6 +11,7 @@ body {
     /* override bootstrap */
     border: none;
     border-radius: 0;
+    margin-bottom: 0px;
 }
 
 .navbar a {
@@ -67,7 +68,8 @@ body {
 }
 
 #survey-calendar {
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
     width: 100%;
 }
 
@@ -80,15 +82,51 @@ body {
     margin-left: auto;
 }
 
-.content .survey-caption small {
+.content .caption {
+    margin-bottom: 1em;
+    /*max-width: 730px;*/
+}
+
+.content .caption small {
     display: block;
     padding: 5px 10px;
     background-color: #404040;
     color: #fff;
-    width: 730px;
+    width: 100%;
     line-height: 1.25;
+    max-width: 730px;
 }
 
 .content h1 {
     font-size: 36px;
+}
+
+#history-background {
+    padding-top: 0em;
+    padding-bottom: .75em;
+}
+
+.headerbar {
+    background-color: #eceaea;
+}
+    .content .headerbar h2 {
+        color: #fff;
+    }
+.content .expand_header {
+    text-align: right;
+}
+
+.content p.breadcrumb {
+    font-size: 12px;
+    background-color: #3a3a3c1a;
+}
+
+.content .img-left {
+    margin: 5px 30px 30px -90px;
+    width: 730px;
+}
+
+.content .img-right {
+    margin: 75px -90px 30px 30px !important;
+    width: 360px;
 }
