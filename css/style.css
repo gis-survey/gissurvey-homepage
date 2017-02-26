@@ -130,3 +130,22 @@ body {
     margin: 75px -90px 30px 30px !important;
     width: 360px;
 }
+
+.content .odk-caption img {
+    margin: 0;
+    max-width: 455px;
+}
+
+.content .odk-caption small {
+    display: block;
+    padding: 0px 10px;
+    background-color: #404040;
+    color: #fff;
+    width: 100%;
+    max-width: 455px;
+    line-height: 1.25;
+}
+
+.content .odk-caption small {
+    padding: 6px 10px;
+}
