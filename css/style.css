@@ -149,3 +149,9 @@ body {
 .content .odk-caption small {
     padding: 6px 10px;
 }
+
+.content p.breadcrumb {
+    font-size: 12px;
+    background-image: inherit;
+    background-color: inherit;
+}
