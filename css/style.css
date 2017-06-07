@@ -1,135 +1,19 @@
-body {
-    font-family: Open Sans, Helvetica, sans-serif;
-}
-
-/* Navbar styling */
-.navbar {
-    background: #084c8d;
-    color: #fff;
-    min-height: 60px;
-    position: relative;
-    /* override bootstrap */
-    border: none;
-    border-radius: 0;
-    margin-bottom: 0px;
-}
-
-.navbar a {
-    color: inherit;
-}
-
-.navbar-brand .navbar-brand {
-    min-height: 60px;
-    line-height: 30px;
-}
-
-.navbar-brand-tm {
-    float: left;
-    height: 60px;
-    padding: 15px 15px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.navbar-header .navbar-header {
-    min-height: 60px;
-}
-
-.navbar .navbar {
-    min-height: 60px;
-}
-
-.navbar-nav > li > a.my-text {
-    min-height: 60px;
-    padding-top: 20px;
-}
-
-.navbar-nav >li > a > b {
-    font-size: 15px;
-}
-
-.navbar-nav > li > a:hover, .navbar-nav > li.nav-active, 
-.navbar .navbar-nav .open .dropdown-menu>li>a:hover  {
-    background-color: #fff;
-    color: #000;
-}
-
-.navbar .navbar-nav .open .dropdown-menu>li>a, .navbar .navbar-nav .open .dropdown-menu {
-    background-color: #084c8d;
-    color: white;
-  }
-
-.navbar .icon-bar {
-    background-color: #fff;
-}
 
 #survey-calendar {
-    margin-top: 20px;
-    margin-left: 40px;
-    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
 }
+    .schedule {
+        height: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-.schedule {
-    width: 100%;
-    height: 800px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.content .caption {
-    margin-bottom: 1em;
-    /*max-width: 730px;*/
-}
-
-.content .caption small {
-    display: block;
-    padding: 5px 10px;
-    background-color: #404040;
-    color: #fff;
-    width: 100%;
-    line-height: 1.25;
-    max-width: 730px;
-}
-
-.content h1 {
-    font-size: 36px;
-}
-
-#history-background {
-    padding-top: 0em;
-    padding-bottom: .75em;
-}
 
 .headerbar {
     background-color: #eceaea;
 }
-    .content .headerbar h2 {
-        color: #fff;
-    }
-.content .expand_header {
-    text-align: right;
-}
 
-.content p.breadcrumb {
-    font-size: 12px;
-    background-color: #3a3a3c1a;
-}
-
-.content .img-left {
-    margin: 5px 30px 30px -90px;
-    width: 730px;
-}
-
-.content .img-right {
-    margin: 75px -90px 30px 30px !important;
-    width: 360px;
-}
 
 .content .odk-caption img {
     margin: 0;
@@ -150,8 +34,40 @@ body {
     padding: 6px 10px;
 }
 
-.content p.breadcrumb {
-    font-size: 12px;
-    background-image: inherit;
-    background-color: inherit;
+
+
+/***** NAV MENU *****/
+.content .mobiletix {
+    background-color: #000000;
+    padding-bottom: 0;
 }
+    .content .mobiletix .contentcontainer {
+        padding: 0;
+    }
+
+.content ul.mobiletix-nav {
+    text-align: center;
+}
+    .content ul.mobiletix-nav {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+        .content ul.mobiletix-nav li {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+        }
+            .content ul.mobiletix-nav li a {
+                color: #fff;
+                border: none;
+                padding: .5em 1em;
+                display: block;
+                font-family: Hind, Helvetica, Arial, sans-serif;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+                .content ul.mobiletix-nav li a:hover {
+                    background-color: #fff;
+                    color: #333;
+                }

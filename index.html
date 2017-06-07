@@ -1,565 +1,1044 @@
 <!DOCTYPE html>
-
-<html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8 | !(IE)]><!--><html id="html" dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
 <head>
-    <meta charset="utf-8">
     <title>TriMet Electronic Survey | On-board Customer Intercept | OD Transit Survey Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TriMet electronic survey, on-board customer intercept survey, and OD transit survey projects home">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="image/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="author" content="">    
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="robots" content="NOODP" />
+	<link rel="shortcut icon" href="//trimet.org/global/img/favicons/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]>
+	<script src="//trimet.org/asset/vendor/html5shiv.min.js"></script>
+	<![endif]-->
+	<link href="//trimet.org/asset/css/style.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="//trimet.org/global/css/styles.min.css" type="text/css" media="all" />   
+	<link rel="stylesheet" href="//trimet.org/global/css/print.css" type="text/css" media="print" />
+
+	<script type="text/javascript">
+	  /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+	  
+	  (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+	  
+	  	grunticon(["//trimet.org/asset/svg/icons.data.svg.css", "//trimet.org/asset/svg/icons.data.png.css", "//trimet.org/asset/svg/icons.fallback.css"]);
+  	</script>
+  
+  <noscript>
+  	<link href="//trimet.org/asset/svg/icons.data.png.css" rel="stylesheet" type="text/css" media="all">
+  </noscript>
+  <script>
+    document.getElementById("html").className =
+    document.getElementById("html").className.replace( /(?:^|\s)no-js(?!\S)/g , '' )
+  </script>
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://trimet.org/asset/css/style.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://trimet.org/global/css/styles.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://trimet.org/global/css/print.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="https://trimet.org/asset/svg/icons.data.svg.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic|Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body id="top">
+<body class="env-develop" id="top">
+	<div id="application">
+		<nav class="mast" role="navigation">
+		  <div class="mast-wrapper wrapper"> 
+		    <div class="mast-logo">
+		      <a title="TriMet" href="//trimet.org" class="logo" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Logo', 'Main']);">
+		      	<h1>
+		      		<i class="logo-icon icon icon-trimet">TriMet</i>
+		      	</h1>
+		      </a>
+		    </div>
+		    <a href="#content" class="mast-skip">Skip to Content</a>
 
-<header>
-  <nav class="navbar">
-    <div class="container">
+		    <div class="mast-menu menu">
+		      <a href="javascript:;" class="menu-control" tabindex="0">
+		        <h2>Menu</h2>
+		      </a>
+		    
+			    <div class="menu-content">
+			        <ul class="menu-list" role="tree">
+			            <li class="menu-item menu-item-link">
+			              <a href="//trimet.org/schedules/index.htm" class="menu-item-header" title="Maps &amp; Schedules" onclick="_gaq.push(['_trackEvent', 'Menu', 'Maps &amp; Schedules', 'Main']);">
+			                <h3 class="menu-item-main">Maps &amp; Schedules</h3>
+			                <div class="menu-item-sub">System Map, Route Maps, Timetables</div>
+			              </a>
+			            </li>
+			            <li class="menu-item menu-item-link">
+			              <a href="//trimet.org/stopsandstations/index.htm" class="menu-item-header" title="Stops &amp; Stations" onclick="_gaq.push(['_trackEvent', 'Menu', 'Stops &amp; Stations', 'Main']);">
+			                <h3 class="menu-item-main">Stops &amp; Stations</h3>
+			                <div class="menu-item-sub">Find a Nearby Stop, Get Stop Details</div>
+			              </a>
+			            </li>
+			    <li class="menu-item menu-item-expandable drawer " role="treeitem">
+			      <a href="//trimet.org/fares/index.htm" class="menu-item-header drawer-header" title="Fares" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Main']);">
+			        <h3 class="menu-item-main">Fares</h3>
+			        <div class="menu-item-sub">Prices, Passes, App, Where to Buy</div>
+			        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+			      </a>
+			    
+			      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+			        <ul class="wrapper">
+	                      <div class="wrapper">
+			                  <div class="l-drawer-fares l-drawer-group slice">
+			                    <div class="slice-item slice-item-expanded l-drawer-grouppush" role="treeitem">
+			                      <table class="l-drawer-table">
+			                        <thead>
+			                          <tr>
+			                            <th><h4 class="l-drawer-header">Tickets and passes</h4></th>
+			                            <th>2&frac12; Hrs</th>
+			                            <th class="l-drawer-table-last">1 Day</th>
+			                          </tr>
+			                        </thead>
+			                        <tbody>
+			                          <tr>
+			                            <td><a href="//trimet.org/fares/index.htm" class="media media-small" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Adult', 'Fares']);">
+			                              <div class="media-wrapper">
+			                                <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/fare-adult.png" alt="" class="media-img"></div>
+			                                <div class="media-content">
+			                                  <h4 class="media-title">Adult</h4>
+			                                  <p class="media-message">18&ndash;64</p>
+			                                </div>
+			                              </div>
+			                            </a></td>
+			                            <td>$2.50</td>
+			                            <td class="l-drawer-table-last">$5</td>
+			                          </tr>
+			                          <tr>
+			                            <td><a href="//trimet.org/fares/honoredcitizen.htm" class="media media-small" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Honored Citizen', 'Fares']);">
+			                              <div class="media-wrapper">
+			                                <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/fare-honored.png" alt="" class="media-img"></div>
+			                                <div class="media-content">
+			                                  <h4 class="media-title">Honored Citizen</h4>
+			                                  <p class="media-message">65+, Medicare or disability</p>
+			                                </div>
+			                              </div>
+			                            </a></td>
+			                            <td>$1.25</td>
+			                            <td class="l-drawer-table-last">$2.50</td>
+			                          </tr>
+			                          <tr>
+			                            <td><a href="//trimet.org/fares/youth.htm" class="media media-small" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Youth', 'Fares']);">
+			                              <div class="media-wrapper">
+			                                <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/fare-youth.png" alt="" class="media-img"></div>
+			                                <div class="media-content">
+			                                  <h4 class="media-title">Youth</h4>
+			                                  <p class="media-message">7&ndash;17 or high school/GED</p>
+			                                </div>
+			                              </div>
+			                            </a></td>
+			                            <td>$1.25</td>
+			                            <td class="l-drawer-table-last">$2.50</td>
+			                          </tr>
+			                        </tbody>
+			                      </table>
+			                      <a class="l-drawer-link" href="//trimet.org/fares/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Learn More', 'Fares']);"><i class="icon icon-8 icon-right-arrow"></i> Learn more about TriMet fares</a>
+			                    </div>
+			                    <div class="slice-item slice-item-expanded slice-item-single" role="treeitem">
+			                      <h3 class="l-drawer-header">Where to buy fares</h3>
+			                      <ul class="l-drawer-media-wrapper" role="group">
+			                        <li><a href="//trimet.org/app/index.htm" class="media" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Tickets app', 'Fares']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/ticketsapp.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h4 class="media-title">TriMet Tickets app</h4>
+			                              <p class="media-message">Pay your fare instantly with your smartphone.</p>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                        <li><a href="//trimet.org/fares/ticketoutlets.htm" class="media" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Grocery Stores', 'Fares']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/grocerystore.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h4 class="media-title">Grocery stores</h4>
+			                              <p class="media-message">Buy fares at Albertsons, Fred Meyer, Safeway and more.</p>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                        <li><a href="//trimet.org/fares/ticketmachines.htm" class="media" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'Ticket vending machines', 'Fares']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/tvm.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h4 class="media-title">Ticket vending machines</h4>
+			                              <p class="media-message">Get tickets from the machines at MAX, WES and Streetcar stations.</p>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                      </ul>
+			                    </div>
+			                    <div class="slice-item slice-item-single">
+			                      <ul class="l-drawer-media-wrapper" role="group">
+			                        <li>
+			                          <a href="//trimet.org/fares/howtopay.htm" class="media" tabindex="0" onclick="_gaq.push(['_trackEvent', 'Menu', 'On the bus', 'Fares']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/cash.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h4 class="media-title">On the bus</h4>
+			                                <p class="media-message">You can buy a 2&frac12;-Hour Ticket or a 1-Day Pass from your bus driver.</p>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                        <li>
+			                          <a href="http://store.trimet.org/" class="media" tabindex="0">
+			                            <div class="media-wrapper" onclick="_gaq.push(['_trackEvent', 'Menu', 'Online for delivery by mail', 'Fares']);">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/mailbox.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h4 class="media-title">Online for delivery by mail</h4>
+			                                <p class="media-message">For a small handling fee, you can get tickets and passes by mail.</p>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                        <li>
+			                          <a href="//trimet.org/contact/tto.htm" class="media" tabindex="0">
+			                            <div class="media-wrapper" onclick="_gaq.push(['_trackEvent', 'Menu', 'Ticket Office Pioneer Square', 'Fares']);">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/pioneer-square.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h4 class="media-title">Ticket Office at Pioneer Square</h4>
+			                                <p class="media-message">Open Monday through Friday, 8:30 a.m. to 5:30 p.m.</p>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                      </ul>
+			                    </div>
+			                  </div>
+			                </div>
+			    
+			        </ul>
+			      </div>
+			    </li>
+			    <li class="menu-item menu-item-expandable drawer " role="treeitem">
+			      <a href="//trimet.org/guide/index.htm" class="menu-item-header drawer-header" title="Guide" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Main']);">
+			        <h3 class="menu-item-main">Guide</h3>
+			        <div class="menu-item-sub">Our Services, Park &amp; Ride, Bike Parking</div>
+			        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+			      </a>
+			    
+			      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+			        <ul class="wrapper">
+	                  <div class="wrapper">
+			                  <div class="l-drawer-howto l-drawer-group slice">
+			                    <div class="slice-item slice-item-double l-drawer-grouppushhigh">
+			                      <h4 class="hide">Modes</h4>
+			                      <section class="l-modesbar l-modesbar-clear">
+			                      
+			                        <div class="l-modesbar-main">
+			                          <ul class="wrapper wrapper-90 slice slice-responsive underline">
+			                            <li class="slice-item">
+			                              <a class="mode mode-media mode-bus has-hover" href="//trimet.org/bus/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Bus', 'Modal']);">
+			                                <div class="mode-image"></div>
+			                                <div class="mode-name mode-push">
+			                                  <h4 class="mode-bold">BUS</h4>
+			                                  <div class="mode-name-small">&nbsp;</div>
+			                                </div>
+			                              </a>
+			                            </li>
+			                      
+			                            <li class="slice-item">
+			                              <a class="mode mode-media mode-max has-hover" href="//trimet.org/max/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'MAX', 'Modal']);">
+			                                <div class="mode-image"></div>
+			                                <div class="mode-name mode-push">
+			                                  <h4 class="mode-bold">MAX</h4>
+			                                  <div class="mode-name-small">Light Rail</div>
+			                                </div>
+			                              </a>
+			                            </li>
+			                            <li class="slice-item">
+			                              <a class="mode mode-media mode-wes has-hover" href="//trimet.org/wes/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'WES', 'Modal']);">
+			                                <div class="mode-image"></div>
+			                                <div class="mode-name mode-push">
+			                                  <h4 class="mode-bold">WES</h4>
+			                                  <div class="mode-name-small">Commuter Rail</div>
+			                                </div>
+			                              </a>
+			                            </li>
+			                          </ul>
+			                        </div>
+			                      
+			                        <div class="l-modesbar-alt">
+			                          <ul class="wrapper wrapper-60 slice slice-responsive">
+			                            <li class="slice-item">
+			                              <a class="mode mode-lift has-hover" href="//trimet.org/lift/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'LIFT', 'Modal']);">
+			                                <div class="mode-icon"><div class="icon icon-32 icon-lift"></div></div>
+			                                <div class="mode-name">
+			                                  <h4 class="mode-name-small mode-bold mode-secondary">LIFT Paratransit</h4>
+			                                </div>
+			                              </a>
+			                            </li>
+			                      
+			                            <li class="slice-item">
+			                              <a class="mode mode-lift has-hover" href="//trimet.org/streetcar/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Streetcar', 'Modal']);">
+			                                <div class="mode-icon"><div class="icon icon-32 icon-streetcar"></div></div>
+			                                <div class="mode-name">
+			                                  <h4 class="mode-name-small mode-bold mode-secondary">Portland Streetcar</h4>
+			                                </div>
+			                              </a>
+			                            </li>
+			                          </ul>
+			                        </div>
+			                      </section>
+			                    </div>
+			                    <div class="slice-item">
+			                      <h4 class="hide">FAQ</h4>
+			                      <ul class="drawer-list">
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/howtopay.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Paying your fare', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Paying your fare</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/bikes/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Bring your bike', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Bringing your bike</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/parkandride/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Park Ride', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Park &amp; Ride</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/rules.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Rules for riding', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Rules for riding</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/access/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Acessibility', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Accessibility</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/kids.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Traveling with kids', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Traveling with kids</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/fieldtrips.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Group and field trips', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Groups and field trips</a></li>
+			                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/what-can-i-bring.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'What can I bring?', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>What can I bring?</a></li>
+			                      </ul>
+			                  
+			                      <ul class="l-drawer-media-wrapper l-drawer-media-triptools">
+			                        <li><a href="//trimet.org/tools/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Trip Tools', 'How To']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/triptools.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h5 class="media-title">Trip Tools</h5>
+			                                <div class="media-message">Plan your trips and get service info on-the-go.</div>
+			                              </div>
+			                            </div></a></li>
+			                      </ul>
+			                  
+			                    </div>
+			                  </div>
+			                </div>
+			    
+			        </ul>
+			      </div>
+			    </li>
+			    <li class="menu-item menu-item-expandable drawer " role="treeitem">
+			      <a href="//trimet.org/contact/index.htm" class="menu-item-header drawer-header" title="Support" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Main']);">
+			        <h3 class="menu-item-main">Support</h3>
+			        <div class="menu-item-sub">Customer Service, Lost &amp; Found</div>
+			        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+			      </a>
+			    
+			      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+			        <ul class="wrapper">
+	                  <div class="wrapper">
+			                  <div class="l-drawer-support l-drawer-group slice">
+			                  
+			                    <div class="slice-item slice-item-single l-drawer-grouppush ">
+			                      <h4 class="hide">Common Links</h4>
+			                      <ul class="l-drawer-media-wrapper l-drawer-block">
+			                        <li><a href="//trimet.org/feedback/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Questions comments or suggestions', 'Support']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <div class="media-title">Customer Service</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="//trimet.org/thanks/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Employee commendation or complaint', 'Support']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <div class="media-title">Employee commendation or complaint</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="//trimet.org/lost/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Lost and Found', 'Support']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <div class="media-title">Lost &amp; Found</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="https://trimet.transitsherpa.com/feedback" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Tickets app support', 'Support']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <div class="media-title">TriMet Tickets app support</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="//trimet.org/ttfeedback/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TransitTracker feedback', 'Support']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <div class="media-title">TransitTracker feedback</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                  
+			                  
+			                  
+			                  
+			                      </ul>
+			                    </div>
+			                  
+			                    <div class="slice-item l-drawer-grouppush ">
+			                      <h4 class="hide">Contact</h4>
+			                      <div class="l-drawer-block blank">
+			                        <ul class="l-drawer-media-wrapper">
+			                          <li><a href="tel:+15032387433" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', '503238RIDE', 'Support']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-content">
+			                                <div class="media-title">503-238-RIDE (7433)</div>
+			                                <div class="media-message">Arrival information: 24 hours a day</div>
+			                                <div class="media-message">Customer service: 7:30 a.m.&ndash;5:30 p.m. daily</div>
+			                              </div>
+			                            </div>
+			                          </a></li>
+			                  
+			                          <li><a href="//trimet.org/contact/tto.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Ticket Office', 'Support']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-content">
+			                                <div class="media-title">TriMet Ticket Office</div>
+			                  
+			                                <div class="media-message">Pioneer Courthouse Square</div>
+			                                <div class="media-message">701 SW 6th Ave., Portland, OR 97204</div>
+			                  
+			                                <div class="media-message">8:30 a.m.&ndash;5:30 p.m. weekdays</div>
+			                              </div>
+			                            </div>
+			                          </a></li>
+			                        </ul>
+			                      </div>
+			                    </div>
+			                  
+			                    <div class="slice-item slice-item-expanded slice-item-single">
+			                      <h3 class="l-drawer-header">Common questions</h3>
+			                  
+			                      <ul class="drawer-list drawer-list-wide">
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447616-the-bus-drove-right-by-without-stopping-to-pick-me-up" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ1', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> The bus drove right by without stopping to pick me up</a></li>
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447666-are-dogs-allowed-on-board-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ2', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Are dogs allowed on board?</a></li>
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447652-my-bus-train-was-late" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ3', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why was my bus/train late?</a></li>
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/686251-why-isn%E2%80%99t-there-more-space-for-bikes-on-board-max-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ4', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why isn&rsquo;t there more space for bikes on board MAX?</a></li>
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/729139-why-isn-t-there-more-space-for-bikes-on-the-bus-bike-racks-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ5', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why isn&rsquo;t there more space for bikes on the bus racks?</a></li>
+			                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQALL', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> VIEW ALL</a></li>
+			                      </ul>
+			                    </div>
+			                  </div>
+			                </div>
+			    
+			        </ul>
+			      </div>
+			    </li>
+			    <li class="menu-item menu-item-expandable drawer drawer-alt" role="treeitem">
+			      <a href="javascript:;" class="menu-item-header drawer-header" title="More" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Main']);">
+			        <h3 class="menu-item-main">More</h3>
+			        
+			        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+			      </a>
+			    
+			      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+			        <ul class="wrapper">
+	                      <div class="wrapper">
+			                  <div class="l-drawer-fares l-drawer-group slice">
+			                    <div class="slice-item slice-item-partial l-drawer-grouppush">
+			                      <div class="l-drawer-block">
+			                        <div class="media">
+			                          <div class="media-wrapper">
+			                            <div class="media-content">
+			                              <h4 class="media-title color-dark">Get service updates by email or SMS</h4>
+			                              <div class="media-message">Sign up for service updates and rider news, or manage your existing account or unsubscribe.</div>
+			                            </div>
+			                          </div>
+			                        </div>
+			                        <form autocomplete="off" action="https://public.govdelivery.com/accounts/ORTRIMET/subscribers/qualify" id="gov_form">
+			                  
+			                          <select id="subscription_type" name="subscription_type" class="hidden">
+			                            <option value="email">Email</option>
+			                            <option value="phone">SMS/Text Message</option>
+			                          </select>
+			                            <div class="field field-text  vertical-push" data-formid="email">
+			                        <label for="email" class="input-label field-label">Email or phone #</label>
+			                  
+			                      <div class="input-wrapper" data-type="text">
+			                    <input id="email" name="email"
+			                      
+			                      type="text" 
+			                      class="input input-text field-input"
+			                      placeholder="Email or phone #"  />
+			                  </div>
+			                  
+			                    <div class="field-error"></div>
+			                    <ul class="field-autocomplete"></ul>
+			                  
+			                    
+			                  </div>
+			                  
+			                          <input type="submit" class="button button-submit tt-stop-submit button-alt button-small" value="Submit" />
+			                  
+			                        </form>
+			                      </div>
+			                    </div>
+			                    <div class="slice-item slice-item-single">
+			                      <h4 class="hide">Links</h4>
+			                      <ul class="l-drawer-media-wrapper">
+			                        <li><a href="//trimet.org/app/index.htm" class="media">
+			                          <div class="media-wrapper" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Tickets App', 'More']);">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/ticketsapp.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h5 class="media-title">TriMet Tickets app</h5>
+			                              <div class="media-message">Pay your fare instantly with your smartphone.</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="//trimet.org/club/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Riders Club', 'More']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/ridersclub.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h5 class="media-title">Riders Club</h5>
+			                              <div class="media-message">Monthly pass giveaways, surveys, contests, events and more.</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                  
+			                        <li><a href="http://howweroll.trimet.org/" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Blog', 'More']);">
+			                          <div class="media-wrapper">
+			                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/howweroll.png" alt="" class="media-img"></div>
+			                            <div class="media-content">
+			                              <h5 class="media-title">TriMet blog</h5>
+			                              <div class="media-message">Transit news, behind-the-scenes features and fun stuff for riders.</div>
+			                            </div>
+			                          </div>
+			                        </a></li>
+			                      </ul>
+			                    </div>
+			                  
+			                    <div class="slice-item slice-item-single">
+			                      <ul class="l-drawer-media-wrapper">
+			                        <li>
+			                          <a href="//trimet.org/gear/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Gear Store', 'More']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/gearstore.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h5 class="media-title">Gear Store</h5>
+			                                <div class="media-message">TriMet mugs, bags, t-shirts, posters and more.</div>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                        <li>
+			                          <a href="//trimet.org/apps/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'App Center', 'More']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/apps.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h5 class="media-title">App Center</h5>
+			                                <div class="media-message">Transit apps from independent software developers.</div>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                        <li>
+			                          <a href="//trimet.org/about" class="media aboutLink" onclick="_gaq.push(['_trackEvent', 'Menu', 'About Us', 'More']);">
+			                            <div class="media-wrapper">
+			                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/rosette.png" alt="" class="media-img"></div>
+			                              <div class="media-content">
+			                                <h5 class="media-title">About us</h5>
+			                                <div class="media-message">Who we are, ridership stats, news, safety/security and more.</div>
+			                              </div>
+			                            </div>
+			                          </a>
+			                        </li>
+			                      </ul>
+			                    </div>
+			                  </div>
+			                </div>
+			    
+			        </ul>
+			      </div>
+			    </li>
+			    </ul>
+		      </div>
+		    </div>
+		  </div>
+    	</nav> 
 
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand-tm navbar-left" href="http://trimet.org/"><img src="image/trimet-logo.svg" height="30" class="inline-block align-middle" alt=""></a>
-      </div>
+		<section id="content" class="content">
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="my-text" href="index.html"><b>Home</b></a></li>
-          <li class="dropdown">
-            <a class="my-text" href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Fare Survey</b><b class="caret"></b></a>
-            <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
-              <li><a href='/fare/introduction'>Introduction</a></li>
-              <li><a href='/fare/fareresults'>Results</a></li>
-              <li><a href='/fare/map'>Map</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="my-text" href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Fall 2016 Survey</b><b class="caret"></b></a>
-            <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
-              <li><a href='/satisfaction/introduction'>Introduction</a></li>
-              <li><a href='/satisfaction/data'>Data</a></li>
-              <li><a href='/satisfaction/progress'>Progress</a></li>
-              <li><a href='/satisfaction/surveyors'>Surveyors</a></li>
-              <li><a href='/satisfaction/results'>Results</a></li>
-              <li><a href='/satisfaction/map'>Map</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="my-text" href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Social Media</b><b class="caret"></b></a>
-            <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
-              <li><a href='https://www.facebook.com/TriMet/'>Facebook</a></li>
-              <li><a href='https://twitter.com/trimet'>Twitter</a></li>
-              <li><a href='https://www.instagram.com/ridetrimet/'>Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/trimet">LinkedIn</a></li>
-            </ul>
-          </li>
-          <!--<li><a class="my-text" href="#"><b>Contact</b></a></li>-->
-        </ul>
-      </div>
-      
-    </div>
-  </nav>
-</header>
+
+		    <div class="standardheader wide">
+		        <p class="breadcrumb"><a href="//trimet.org">Home</a> : Electronic Survey Projects</p>
+		        <h1>Electronic Survey Projects</h1>
+		        <div class="first">
+                    <p>This site serves as the central portal for agency stakeholders, the survey team and the general public to learn more about various electronic survey projects.</p>
+		        </div><!-- .first -->
+		    </div><!-- .standardheader -->  
+		    
+		    <div class="fullwidth">
+		        <div class="contentcontainer">
+		            
+
+		            <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+		            		<p class="">An introduction and overview to the agency electronic survey team, projects, and processes.</p>
+		                    <ul class="anchor">
+		                        <li><a href="#overview">Overview</a></li>
+		                        <li><a href="#team">Survey Team</a></li>
+		                        <li><a href="#projects">Survey Projects</a></li>
+		                        <li><a href="#timeline">Project Timeline</a></li>
+		                        <li><a href="#technology">Technology</a></li>
+		                        <li><a href="#savings">Advantages and Cost Savings</a></li>
+		                        <li><a href="#reports">Reports</a></li>
+		                    </ul>
+		                </div><!-- .col -->
+		               <div class="col-xs-12 col-sm-4">
+		                    <div class="box">
+		                    	<h3>Current Surveys</h3>
+                                <ul class="links">
+                                    <li><a href="fare/introduction.html">Fare Survey</a></li>
+		                    	    <li><a href="satisfaction/introduction.html">Fall 2016 Survey</a></li>
+                                </ul>
+		                    </div>
+		                    <p>&nbsp;</p>
+		               </div><!-- .col -->
+		               
+		            </div><!-- .row -->
+		                        
+		        </div><!-- .contentcontainer -->
+		    </div><!-- .fullwidth -->   
 
 
 
 
-<!--Dashboard Section-->
 
-<section id="content" class="content">
-<!-- InstanceBeginEditable name="Main" -->
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="overview" class="strata">Overview</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            <div class="row">
+	            	<div class="col-xs-12">
 
-    <div class="standardheader wide">
-        <p class="breadcrumb"><a href="https://trimet.org">Home</a> : <a href="index.html">Electronic Survey</a></p>
-        <h1>Electronic Survey Home</h1>
-           
-        <div class="first">
-            <p>An introduction and overview to agency electronic survey team, projects, and processes</p>
-        </div><!-- .first -->
-    </div><!-- .standardheader -->  
-    
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>This site serves as the central portal for agency stakeholders, the survey team and the general public to learn more about various electronic survey projects</p>
-               </div><!-- .col -->
-            </div><!-- .row -->
-                        
-            <div class="row">
-               <div class="col-xs-12">
-                    <ul class="anchor tight">
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#team">Survey Team</a></li>
-                        <li><a href="#projects">Survey Projects</a></li>
-                        <li><a href="#timeline">Project Timeline</a></li>
-                        <li><a href="#technology">Technology</a></li>
-                        <li><a href="#savings">Advantages and Cost Savings</a></li>
-                        <li><a href="#reports">Reports</a></li>
-                    </ul>
-                </div><!-- .col -->
-            </div><!-- .row -->
-                        
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
-    
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="overview" class="strata">Overview</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            <div class="row">
-            <div class="col-xs-12">
-            <!-- InstanceBeginEditable name="Content" -->
-            <p class="caption img-right">
-                <img src="image/tablet.jpg" alt="survey tablet" />
-            </p>
-            <h3 id="history-background">Background and History</h3>
-            <p>TriMet relies on on-board rider surveys to produce data in support of planning initiatives, Title VI and FTA reports.  The findings and statistical analysis provide valuable information about riders, travel patterns, as well as the effects of new rail alignments, service and fare changes.</p>
-            <p>TriMet migrated all on-board rider surveys from paper to electronic tablet data collection during the 2014-2015 Orange Line Before Study. The survey budgets were consolidated and a position was created to manage and oversee the implementation of electronic surveys at an agency-wide level. The new approach includes the recruitment of local college students to conduct on-board surveys, and the utilization of robust and  affordable open source software.  This strategy results in significant time and cost savings, provides more accurate and reliable data, offers a more eco-friendly approach, and improves customer relations.</p>
-            <p> All on-board surveys are now conducted with tablets and managed centrally in IT-GIS by the Electronic Survey Developer &amp; Analyst.</p>
+			            <p class="caption img-right">
+			                <img src="//trimet.org/research/img/survey-taker.jpg" alt="Survey tablet" />
+			                <small>Survey on an electronic tablet</small>
+			            </p>
+			            <h3>Background and History</h3>
+			            <p>TriMet relies on on-board rider surveys to produce data in support of planning initiatives, Title VI and FTA reports.  The findings and statistical analysis provide valuable information about riders, travel patterns, as well as the effects of new rail alignments, service and fare changes.</p>
+			            <p>TriMet migrated all on-board rider surveys from paper to electronic tablet data collection during the 2014&ndash;2015 Orange Line Before Study. The survey budgets were consolidated and a position was created to manage and oversee the implementation of electronic surveys at an agency-wide level. The new approach includes the recruitment of local college students to conduct on-board surveys, and the utilization of robust and  affordable open source software. This strategy results in significant time and cost savings, provides more accurate and reliable data, offers a more eco-friendly approach, and improves customer relations.</p>
+			            <p> All on-board surveys are now conducted with tablets and managed centrally in IT-GIS by the Electronic Survey Developer &amp; Analyst.</p>
 
+		            </div><!-- .col -->
+	            </div><!-- .row -->
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->
+	                  
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="team" class="strata">Survey Team</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            <div class="row">
+		            <div class="col-xs-12">
 
-            <!-- InstanceEndEditable -->
-            </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
-                  
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="team" class="strata">Survey Team</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            <div class="row">
-            <div class="col-xs-12">
-            <!-- InstanceBeginEditable name="Content" -->
-            <p class="caption img-right">
-                <img src="https://trimet.org/research/img/survey.jpg" alt="Woman taking a survey on a bus" />
-                <small>On-board TriMet vehicles survey</small>
-            </p>
-            <h3>Team</h3>
-            <p>The TriMet Electronic Survey team is currently housed under the IT-GIS department, within the Public Affairs division. The team includes one project manager (Electronic Survey Developer &amp; Analyst) and about 20 part-time surveyors.</p>
-            <p>The survey team conducts regular on-board customer intercept surveys. These surveys range from fare surveys to customer satisfaction surveys. The data gathered from these surveys is used by multiple departments in the agency to study a variety of programs and proposals.</p>
-            <p>In addition to conducting on-board surveys, the survey team also helps Customer Service, Comunity Affairs, Marketing Research, Facilities, and Service Planning carry out other assignments.</p>
-            
-            <h3>Surveying Process</h3>
-            <p><ul>
-                <li>The surveyors approach passengers on the bus, MAX and WES and ask them to participate in a brief survey.  Generally, the data is entered into the tablets by both the surveyors and the passengers.</li>
-                <li>Surveyors will typically be working individually on the bus lines or in groups of two on MAX and WES.</li>
-                <li>Everyone will have extensive training in the following:  safety and customer service, communication, survey administration, and tablet use.</li>
-            </ul></p>
-            <p class="caption img-right">
-                <img src="image/equipment.jpg" alt="survey equipment" />
-                <small>Survey equipment</small>
-            </p>
-            <h3>How to identify surveyors?</h3>
-            <p><ul>
-              <li>They will be wearing blue vests labeled "TriMet Survey Team" on front and back.</li>
-              <li>They will have TriMet badges with photos and transit privileges.</li>
-              <li>Each will carry a handheld tablet and shoulder bag.</li>
-            </ul></p>
+			            <p class="caption img-right">
+			                <img src="//trimet.org/research/img/survey.jpg" alt="Woman taking a survey on a bus" />
+			                <small>On-board TriMet vehicles survey</small>
+			            </p>
+			            <h3>Team</h3>
+			            <p>The TriMet Electronic Survey team is currently housed under the IT-GIS department, within the Public Affairs division. The team includes one project manager (Electronic Survey Developer &amp; Analyst) and about 20 part-time surveyors.</p>
+			            <p>The survey team conducts regular on-board customer intercept surveys. These surveys range from fare surveys to customer satisfaction surveys. The data gathered from these surveys is used by multiple departments in the agency to study a variety of programs and proposals.</p>
+			            <p>In addition to conducting on-board surveys, the survey team also helps Customer Service, Comunity Affairs, Marketing Research, Facilities, and Service Planning carry out other assignments.</p>
+			            
+			            <h3>Surveying Process</h3>
+			            <ul>
+			                <li>The surveyors approach passengers on the bus, MAX and WES and ask them to participate in a brief survey.  Generally, the data is entered into the tablets by both the surveyors and the passengers.</li>
+			                <li>Surveyors will typically be working individually on the bus lines or in groups of two on MAX and WES.</li>
+			                <li>Everyone will have extensive training in the following:  safety and customer service, communication, survey administration, and tablet use.</li>
+			            </ul>
+			            <p class="caption img-right">
+			                <img src="//trimet.org/research/img/equipment.jpg" alt="Survey equipment" />
+			                <small>Survey equipment</small>
+			            </p>
+			            <h3>How to identify surveyors?</h3>
+			            <ul>
+			              <li>They will be wearing blue vests labeled &ldquo;TriMet Survey Team&rdquo; on front and back.</li>
+			              <li>They will have TriMet badges with photos and transit privileges.</li>
+			              <li>Each will carry a handheld tablet and shoulder bag.</li>
+			            </ul>
 
-            
-            <p class="caption" width="100%">
-                <img src="https://trimet.org/research/img/surveyteam.jpg" alt="The survey team" class="img" />
-                <small width="730px">Surveyors in front of TriMet Center street office</small>
-            </p>
+<!-- 			            <p>&nbsp;</p>
+			            
+			            <p class="caption">
+			                <img src="//trimet.org/research/img/surveyteam.jpg" alt="The survey team" class="img" />
+			                <small>Surveyors in front of TriMet Center street office</small>
+			            </p> -->
 
-            
-            <p>&nbsp;</p>
+		            </div><!-- .col -->
+		        </div><!-- .row -->
 
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->
+	    
+	    
 
-            <!-- InstanceEndEditable -->
-            </div><!-- .col -->
-        </div><!-- .row -->
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="projects" class="strata">Survey Projects</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            
+	            <div class="row">
+	                <div class="col-xs-12">
+		                <p>The survey team conducts both recurring surveys such as the fare survey and on-demand ad-hoc surveys for various departments inside the agency. Some of the typical surveys are:</p>
+		                <ul>
+		                    <li>Fare survey</li>
+		                    <li>Fare evasion survey</li>
+		                    <li>Before and after studies</li>
+		                    <li>Origin and destination studies</li>
+		                    <li>Customer satisfaction survey</li>
+		                    <li>Title VI related surveys</li>
+		                    <li>Ridership study</li>
+		                    <li>Automatic Passenger Counter(APC) verification survey</li>
+		                    <li>Operators survey</li>
+		                    <li>Facilities inspection</li>
+		                </ul>
+		                <p>Many surveys are conducted on an annual basis while some are conducted every other year. The following timeline presents an overview of survey projects by quarter and year.</p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	    
+	        </div><!-- .contentcontainer -->
 
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
-    
-    
-
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="projects" class="strata">Survey Projects</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            
-            <div class="row">
-                <div class="col-xs-12">
-                <h3></h3>
-                <p>The survey team conducts both recurring surveys such as the fare survey and on-demand ad-hoc surveys for various departments inside the agency. Some of the typical surveys are:</p>
-                <ul>
-                    <li>Fare survey</li>
-                    <li>Fare evasion survey</li>
-                    <li>Before and after studies</li>
-                    <li>Origin and destination studies</li>
-                    <li>Customer satisfaction survey</li>
-                    <li>Title VI related surveys</li>
-                    <li>Ridership study</li>
-                    <li>Automatic Passenger Counter(APC) verification survey</li>
-                    <li>Operators survey</li>
-                    <li>Facilities inspection</li>
-                </ul>
-                <p>Many surveys are conducted on an annual basis while some are conducted every other year. The following timeline presents an overview of survey projects by quarter and year.</p>
-                </div><!-- .col -->
-
-
-            </div><!-- .row -->
-
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-    
-        </div><!-- .contentcontainer -->
-
-    </div><!-- .fullwidth -->
-    
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="timeline" class="strata">Project Timeline</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        
-
-
+	    </div><!-- .fullwidth -->
+	    
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="timeline" class="strata">Project Timeline</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
             <div id="survey-calendar">
-
-                <iframe class="schedule" seamless frameborder="0" min-width="900" width="100%" height="900" padding-left="15px" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xA0J5yhE_TvdseNBuf7wxCVIfOcxEuuEotAEtExLH0w/pubhtml?gid=0&single=false&widget=false&headers=false&rm=minimal&frameborder=0&range=A1:L32&chrome=false&output=html&gridlines=false"></iframe>
+                <iframe class="schedule" seamless frameborder="0" min-width="900" width="100%" height="900" scrolling="no" src="https://docs.google.com/spreadsheets/d/1xA0J5yhE_TvdseNBuf7wxCVIfOcxEuuEotAEtExLH0w/pubhtml?gid=0&single=false&widget=false&headers=false&rm=minimal&frameborder=0&range=A1:L32&chrome=false&output=html&gridlines=false"></iframe>
             </div>
 
-        <div class="contentcontainer">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .contentcontainer -->
+	        <div class="contentcontainer">
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->
+	    
+
+	    
+	    
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="technology" class="strata">Technology</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            
+	            <div class="row">
+	                <div class="col-xs-12 col-md-6">
+	                <h3>Equipment &amp; Peripherals</h3>
+	                <ul>
+	                    <li>Samsung Galaxy 8 inch tablet - $250</li>
+	                    <li>Samsung Galaxy tablet case - $17</li>
+	                    <li>Safety vest - $25</li>
+	                    <li>Reading light with clip - $8</li>
+	                    <li>Tech gear bag – $8</li>
+	                    <li>iRoller (liquid free, reusable touch screen cleaner) - $20</li>
+	                    <li>Mini portable power - $10</li>
+	                </ul>
+	                <h3>Cellular Services</h3>
+	                <ul>
+	                    <li>Android tablets - $40/month</li>
+	                    <li>Phone fees for supervisors $37/month</li>
+	                </ul>
+
+	                </div><!-- .col -->
+
+	                <div class="col-xs-12 col-md-6">
+	                    <h3>Software</h3>
+	                    <p>We rely almost exclusively on open source software to collect and manage data, and manage survey projects. On the data collection side, we use <a href="https://opendatakit.org/">Open Data Kit (ODK)</a>. ODK was selected based on requirements, costs and the ability to easily customize for various surveys. It is a collection of open source tools for survey design, collection, and data aggregation and is recommended by industry experts. We use <a href="https://www.postgresql.org/">PostgreSQL</a> and <a href="http://postgis.net/">PostGIS</a> databases to store survey data. </p>
+	                    <p>We also develop in-house customized <a href="https://www.android.com/">Android</a> apps that work well with ODK to capture boarding/alighting, and origin/destination data. We use <a href="http://flask.pocoo.org/">Python Flask</a> to write API to send data from tablets to data servers.</p>
+	                    <p><b>Python Flask</b> is also our framework used to develop web dashboards to track project status, monitor data, and visualize results.</p>
+	                    <p>Here is our <a href="https://github.com/gis-survey">GitHub</a> source code page.</p>
+
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+
+	            <div class="row">
+	                <div class="col-xs-12 col-md-6">
+	                    <p class="odk-caption img">
+	                        <img src="image/od_survey1.png" alt="origin destination survey" />
+	                        <small>Origin destination survey ODK screenshot</small>
+	                    </p>
+	                </div>
+	                <div class="col-xs-12 col-md-6">
+	                    <p class="odk-caption img">
+	                        <img src="image/od_survey2.png" alt="origin destination survey" />
+	                        <small>Origin destination survey ODK screenshot</small>
+	                    </p>
+	                </div>
+	            </div><!-- .row -->
+	            
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	    
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->
+	    
+	    
+	    
+	    
+	    
+	    
+	    <div class="fullwidth headerbar">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2 id="savings" class="strata">Advantages and Cost Savings</h2>
+	            </div><!-- .col -->
+	        </div><!-- .row -->
+	    </div><!-- .fullwidth -->
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            
+	            <div class="row">
+	                <div class="col-xs-12 col-md-6">
+	                    <h3>Advantages of Tablet-based Surveys over Paper-based Surveys</h3>
+	                    <ul>
+	                        <li>Significant time and cost savings:  eliminates paper, printing, postage, data entry, and GIS post-processing and lowers overall cost (30% cost reduction for the 2016 spring tablet-based fare survey versus the 2012 paper-based fare survey). The data for the 2016 fare survey was available within one month, as opposed to six months for the 2012 paper-based survey</li>
+	                        <li>No oversampling required to meet quota, as real-time data capture is monitored</li>
+	                        <li>Data entry errors are decreased and can be auto-validated</li>
+	                        <li>Data accuracy is vastly improved and location information for stops on/off is auto-captured. Data throw-out is almost non-existent</li>
+	                        <li>Demonstrates the use of innovation in technology and environmental conscientiousness</li>
+	                    </ul>
+
+	                </div><!-- .col -->
+
+	                <div class="col-xs-12 col-md-6">
+	                    <div id="cost-comparison">
+	                    <h3>TriMet 2012 Paper and 2016 Tablet Fare Survey Cost Comparison</h3>
+	                   <iframe width="507.5" height="393" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/17MyEzHMP9jdyDIfPg1XLLqPkH3_D7zOmWqJWHFZlT-I/pubchart?oid=1711662104&amp;format=interactive"></iframe></div>
+	                    <div class="expand_container">
+	                        <div class="expand">
+	                            <div class="expand_header">
+	                                <p class="small"><a>About the cost comparison chart</a></p>
+	                            </div>
+	                            <div class="expand_content_container">
+	                                <div class="expand_content">
+	                                    <p class="small">This graph shows that the cost per sample hour for the 2016 spring fare survey is significantly lower than that of the 2012 survey. The 2016 survey and 2012 survey covered similar routes and had similar sample sizes.</p>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div><!-- .col -->
 
 
-    </div><!-- .fullwidth -->
+	            </div><!-- .row -->
+	            
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	    
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->
+	    
+	    
+	    <div class="fullwidth">
+	        <div class="contentcontainer">
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <h2 id="reports" class="strata">Reports</h2>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	            <div class="row">
+	                <div class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-6 col-sm-offset-0">
+	                    <ul class="links">
+	                        <li><a href="http://trrjournalonline.trb.org/doi/abs/10.3141/2643-03">Conducting Onboard Transit Rider Surveys with Electronic Handheld Tablets</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-6 col-sm-offset-0">
+	                    <ul class="links">
+	                        <li><a href="pdf/TRB-17-04949-McHugh_Dong.pdf">TRB Presentation</a></li>
+	                    </ul>
+	                </div><!-- .col -->
+
+	            </div><!-- .row -->
+	                        
+	    		<p>&nbsp;</p>
+
+	            <!--******* GET UPDATES BY EMAIL *******-->
+	            <div class="row">
+	                <div class="col-xs-12 col-lg-8 col-lg-offset-2 hcenter">
+	                    <div class="box">
+	                    	<h3>Get updates by email</h3>
+		                    <form action="https://public.govdelivery.com/accounts/ORTRIMET/subscribers/qualify" method="POST" class="getemailupdates">
+		                        <input id="topic_id" name="topic_id" type="hidden" value="ORTRIMET_25" />
+		                        <input type="hidden" name="origin" value="http://survey.trimet.org/index.htm" />
+		                        <input type="text" name="email" id="email" value="Enter email address" onFocus="doClear(this,'Enter email address');" onBlur="doText(this,'Enter email address');" />
+		                        <input type="submit" value="Go" class="submit" />
+		                    </form>
+		                </div>
+	                </div><!-- .col -->
+	            </div><!-- /.row --> 
+	            
+	            <div class="row">
+	                <div class="col-xs-12">
+	                    <p class="top"><a href="#top">Top</a></p>
+	                </div><!-- .col -->
+	            </div><!-- .row -->
+	    
+	        </div><!-- .contentcontainer -->
+	    </div><!-- .fullwidth -->    
+    
     
 
-    
-    
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="technology" class="strata">Technology</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                <h3>Equipment &amp; Peripherals</h3>
-                <ul>
-                    <li>Samsung Galaxy 8 inch tablet - $250</li>
-                    <li>Samsung Galaxy tablet case - $17</li>
-                    <li>Safety vest - $25</li>
-                    <li>Reading light with clip - $8</li>
-                    <li>Tech gear bag – $8</li>
-                    <li>iRoller (liquid free, reusable touch screen cleaner) - $20</li>
-                    <li>Mini portable power - $10</li>
-                </ul>
-                <h3>Cellular Services</h3>
-                <ul>
-                    <li>Android tablets - $40/month</li>
-                    <li>Phone fees for supervisors $37/month</li>
-                </ul>
-
-                </div><!-- .col -->
-
-                <div class="col-xs-12 col-md-6">
-                    <h3>Software</h3>
-                    <p>We rely almost exclusively on open source software to collect and manage data, and manage survey projects. On the data collection side, we use <a href="https://opendatakit.org/">Open Data Kit (ODK)</a>. ODK was selected based on requirements, costs and the ability to easily customize for various surveys. It is a collection of open source tools for survey design, collection, and data aggregation and is recommended by industry experts. We use <a href="https://www.postgresql.org/">PostgreSQL</a> and <a href="http://postgis.net/">PostGIS</a> databases to store survey data. </p>
-                    <p>We also develop in-house customized <a href="https://www.android.com/">Android</a> apps that work well with ODK to capture boarding/alighting, and origin/destination data. We use <a href="http://flask.pocoo.org/">Python Flask</a> to write API to send data from tablets to data servers.</p>
-                    <p><b>Python Flask</b> is also our framework used to develop web dashboards to track project status, monitor data, and visualize results.</p>
-                    <p>Here is our <a href="https://github.com/gis-survey">GitHub</a> source code page.</p>
-
-                </div><!-- .col -->
-            </div><!-- .row -->
-
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <p class="odk-caption img">
-                        <img src="image/od_survey1.png" alt="origin destination survey" />
-                        <small>Origin destination survey ODK screenshot</small>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <p class="odk-caption img">
-                        <img src="image/od_survey2.png" alt="origin destination survey" />
-                        <small>Origin destination survey ODK screenshot</small>
-                    </p>
-                </div>
-            </div><!-- .row -->
-            
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-    
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
-    
-    
-    
-    
-    
-    
-    <div class="fullwidth headerbar">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 id="savings" class="strata">Advantages and Cost Savings</h2>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .fullwidth -->
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <h3>Advantages of Tablet-based Surveys over Paper-based Surveys</h3>
-                    <ul>
-                        <li>Significant time and cost savings:  eliminates paper, printing, postage, data entry, and GIS post-processing and lowers overall cost (30% cost reduction for the 2016 spring tablet-based fare survey versus the 2012 paper-based fare survey). The data for the 2016 fare survey was available within one month, as opposed to six months for the 2012 paper-based survey</li>
-                        <li>No oversampling required to meet quota, as real-time data capture is monitored</li>
-                        <li>Data entry errors are decreased and can be auto-validated</li>
-                        <li>Data accuracy is vastly improved and location information for stops on/off is auto-captured. Data throw-out is almost non-existent</li>
-                        <li>Demonstrates the use of innovation in technology and environmental conscientiousness</li>
-                    </ul>
-
-                </div><!-- .col -->
-
-                <div class="col-xs-12 col-md-6">
-                    <div id="cost-comparison">
-                    <h3>TriMet 2012 Paper and 2016 Tablet Fare Survey Cost Comparison</h3>
-                   <iframe width="507.5" height="393" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/17MyEzHMP9jdyDIfPg1XLLqPkH3_D7zOmWqJWHFZlT-I/pubchart?oid=1711662104&amp;format=interactive"></iframe></div>
-                    <div class="expand_container">
-                        <div class="expand">
-                            <div class="expand_header">
-                                <p class="small"><a>About the cost comparison chart</a></p>
-                            </div>
-                            <div class="expand_content_container">
-                                <div class="expand_content">
-                                    <p class="small">This graph shows that the cost per sample hour for the 2016 spring fare survey is significantly lower than that of the 2012 survey. The 2016 survey and 2012 survey covered similar routes and had similar sample sizes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .col -->
 
 
-            </div><!-- .row -->
-            
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-    
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
-    
-    
-    <div class="fullwidth">
-        <div class="contentcontainer">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 id="reports" class="strata">Reports</h2>
-                </div><!-- .col -->
-            </div><!-- .row -->
-            <div class="row">
-                <div class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-6 col-sm-offset-0">
-                    <ul class="links">
-                        <li><a href="http://trrjournalonline.trb.org/doi/abs/10.3141/2643-03">Conducting Onboard Transit Rider Surveys with Electronic Handheld Tablets</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-6 col-sm-offset-0">
-                    <ul class="links">
-                        <li><a href="pdf/TRB-17-04949-McHugh_Dong.pdf">TRB Presentation</a></li>
-                    </ul>
-                </div><!-- .col -->
+	</section><!-- #.content -->
 
-            </div><!-- .row -->
-                        
-    
-            <!--******* GET UPDATES BY EMAIL *******-->
-            <div class="row">
-                <div class="col-xs-12 col-lg-8 col-lg-offset-2 hcenter">
-                    <h3 class="strata" id="emailupdates">Get updates by email</h3>
-                    <form action="https://public.govdelivery.com/accounts/ORTRIMET/subscribers/qualify" method="POST" class="getemailupdates">
-                        <input id="topic_id" name="topic_id" type="hidden" value="ORTRIMET_25" />
-                        <input type="hidden" name="origin" value="http://trimet.org/about/dashboard/index.htm" />
-                        <input type="text" name="email" id="email" value="Enter email address" onFocus="doClear(this,'Enter email address');" onBlur="doText(this,'Enter email address');" />
-                        <input type="submit" value="Go &raquo; " class="submit" />
-                    </form>
-                </div><!-- .col -->
-            </div><!-- /.row --> 
-            
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="top"><a href="#top">Top</a></p>
-                </div><!-- .col -->
-            </div><!-- .row -->
-    
-        </div><!-- .contentcontainer -->
-    </div><!-- .fullwidth -->
+	<section id="footer" class="content footer">
+	    <div class="contentcontainer-fluid" style="background-color: rgb(15, 15, 15); color: rgb(255, 255, 255); padding-bottom: 50px;">
+	      <div class="contentcontainer">
+	        <div class="row">
+	          <div class="col-xs-12 nopadding">
+	            <div class="col-xs-12 col-sm-4 col-md-6 hcenter nopadding">
+	              <div style="padding: 30px 30px 5px 30px;"><a href="/"><i class="icon icon-slogan icon-trimet-logo-slogan"></i></a></div>
+	            </div>
+	            <div class="col-xs-12 col-sm-8 col-md-6 hcenter nopadding" style="margin-top: 40px;" >
+	              <div class="search-obj hidden-xs"><i class="icon icon-24 icon-search"></i></div>
+	              <div class="search-obj">
+	                <form action="//trimet.org/search/results.htm" id="cse-search-box" class="" role="search">
+	                  <div class="form-group search-obj">
+	                      <input name="cx" value="009014880959573829355:b8mecw7atko" type="hidden">
+	                      <input name="cof" value="FORID:10;NB:1" type="hidden">
+	                      <input name="ie" value="UTF-8" type="hidden">
+	                      <label for="q" class="hide">Search trimet.org</label>
+	                    <div style="font-size: 12px;" class="input-wrapper" data-type="text">
+	                      <input style="color: rgb(102, 102, 102); padding: 1px 50px 1px 5px;" spellcheck="false" dir="ltr" name="q" id="q" autocomplete="off" class="input input-text field-input" placeholder="Search trimet.org" type="text">
+	                    </div>
+	                  </div>
+	                  <div class="search-obj">
+	                    <button onclick="submitsearch(); return false;" name="sa" style="padding: 3px 2px; min-width: 20px; font-weight: 300; font-size: 1em;" type="submit" class="button button-submit hidden-sm hidden-md hidden-lg"><i class="icon icon-12 icon-search"></i></button>
+	                   <button onclick="submitsearch(); return false;" name="sa" style="padding: 3px 0px; min-width: 80px; font-weight: 300; font-size: 1em;" type="submit" class="button button-submit hidden-xs">Search</button>
+	                  </div>
+	                </form>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-xs-12 nopadding">
+	            <div class="col-sm-6 col-sm-push-6 hcenter nopadding">
+	              <div class="social-icons" style="padding: 15px 0;">
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Facebook', 'Social']);" href="//facebook.com/trimet" title="Facebook">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-facebook"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Instagram', 'Social']);" href="//instagram.com/ridetrimet" title="Instagram">
+	                  <div class="search-obj"><i class="icon icon-20 icon-instagram-inv"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Twitter', 'Social']);" href="//twitter.com/trimet" title="Twitter">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-twitter"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'LinkedIN', 'Social']);" href="//www.linkedin.com/company/trimet" title="LinkedIn">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-linkedin"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Flickr', 'Social']);" href="//flickr.com/trimet" title="Flickr">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-flickr"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Youtube', 'Social']);" href="//youtube.com/trimettv" title="Youtube">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-youtube"></i></div>
+	                </a>
+	                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Email', 'Social']);" href="//trimet.org/email/index.htm" title="Email">
+	                  <div class="search-obj"><i class="icon icon-20 icon-social-email"></i></div>
+	                </a>
+	              </div>
+	            </div>
+	            <div class="col-sm-6 col-sm-pull-6 hcenter nopadding">
+	              <div class="footer-bottom">
+	                &copy; 2017 TriMet
+	                 &bull;
+	                <a href="//trimet.org/legal/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Terms of Use', 'Bottom']);">Terms of Use</a>
+	                 &bull;
+	                <a href="//trimet.org/legal/privacy.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Privacy Policy', 'Bottom']);">Privacy Policy</a>
+	                 &bull;
+	                <a href="//trimet.org/about/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'About Us', 'Bottom']);">About Us</a>
+	                 &bull;
+	                <a href="//trimet.org/contact/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Customer Service', 'Bottom']);">Customer Service</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	    
+	        <div class="row">
+	          <div class="col-xs-12 nopadding hcenter">
+	            <div class="footer-bottom" style="padding:0;">
+	              <p>Our Terms of Service and Privacy Policy have changed. <a href="//trimet.org/legal/index.htm">See what&rsquo;s new</a>.</p>
+	            </div>
+	          </div>
+	        </div>
+	    
+	      </div>
+	    </div>
+	    
+	    <p class="print-footer">&copy; 2017 TriMet </p>
+	  </section>
 
-
-<!-- InstanceEndEditable -->
-</section><!-- #.content -->
-    <section id="footer" class="content footer">
-    <div class="contentcontainer-fluid" style="background-color: rgb(15, 15, 15); color: rgb(255, 255, 255); padding-bottom: 50px;">
-      <div class="contentcontainer">
-        <div class="row">
-          <div class="col-xs-12 nopadding">
-            <div class="col-xs-12 col-sm-4 col-md-6 hcenter nopadding">
-              <div style="padding: 30px 30px 5px 30px;"><a href="https://trimet.org"><i class="icon icon-slogan icon-trimet-logo-slogan"></i></a></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-6 hcenter nopadding" style="margin-top: 40px;" >
-              <div class="search-obj hidden-xs"><i class="icon icon-24 icon-search"></i></div>
-              <div class="search-obj">
-                <form action="https://trimet.org/search/results.htm" id="cse-search-box" class="" role="search">
-                  <div class="form-group search-obj">
-                      <input name="cx" value="009014880959573829355:b8mecw7atko" type="hidden">
-                      <input name="cof" value="FORID:10;NB:1" type="hidden">
-                      <input name="ie" value="UTF-8" type="hidden">
-                      <label for="q" class="hide">Search trimet.org</label>
-                    <div style="font-size: 12px;" class="input-wrapper" data-type="text">
-                      <input style="color: rgb(102, 102, 102); padding: 1px 50px 1px 5px;" spellcheck="false" dir="ltr" name="q" id="q" autocomplete="off" class="input input-text field-input" placeholder="Search trimet.org" type="text">
-                    </div>
-                  </div>
-                  <div class="search-obj">
-                    <button onclick="submitsearch(); return false;" name="sa" style="padding: 3px 2px; min-width: 20px; font-weight: 300; font-size: 1em;" type="submit" class="button button-submit hidden-sm hidden-md hidden-lg"><i class="icon icon-12 icon-search"></i></button>
-                   <button onclick="submitsearch(); return false;" name="sa" style="padding: 3px 0px; min-width: 80px; font-weight: 300; font-size: 1em;" type="submit" class="button button-submit hidden-xs">Search</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 nopadding">
-            <div class="col-sm-6 col-sm-push-6 hcenter nopadding">
-              <div class="social-icons" style="padding: 15px 0;">
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Facebook', 'Social']);" href="//facebook.com/trimet" title="Facebook">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-facebook"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Instagram', 'Social']);" href="//instagram.com/ridetrimet" title="Instagram">
-                  <div class="search-obj"><i class="icon icon-20 icon-instagram-inv"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Twitter', 'Social']);" href="//twitter.com/trimet" title="Twitter">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-twitter"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'LinkedIN', 'Social']);" href="//www.linkedin.com/company/trimet" title="LinkedIn">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-linkedin"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Flickr', 'Social']);" href="//flickr.com/trimet" title="Flickr">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-flickr"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Youtube', 'Social']);" href="//youtube.com/trimettv" title="Youtube">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-youtube"></i></div>
-                </a>
-                <a onclick="_gaq.push(['_trackEvent', 'Top', 'Email', 'Social']);" href="https://trimet.org/email/index.htm" title="Email">
-                  <div class="search-obj"><i class="icon icon-20 icon-social-email"></i></div>
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6 col-sm-pull-6 hcenter nopadding">
-              <div class="footer-bottom">
-                &copy; 2017 TriMet
-                 &bull;
-                <a href="https://trimet.org/legal/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Terms of Use', 'Bottom']);">Terms of Use</a>
-                 &bull;
-                <a href="https://trimet.org/legal/privacy.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Privacy Policy', 'Bottom']);">Privacy Policy</a>
-                 &bull;
-                <a href="https://trimet.org/about/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'About Us', 'Bottom']);">About Us</a>
-                 &bull;
-                <a href="https://trimet.org/contact/index.htm" onclick="_gaq.push(['_trackEvent', 'Footer', 'Customer Service', 'Bottom']);">Customer Service</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <p class="print-footer">&copy; 2017 TriMet </p>
-  </section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://trimet.org/global/js/menu.min.js?ver=2.0.9"></script>
-<script src="https://trimet.org/global/js/basic.min.js?ver=2.0.9"></script>
-<script src="https://trimet.org/global/js/embar.min.js?ver=2.0.9"></script>
-<script type="text/javascript">
-// google analytics 
-var _gaq=[['_setAccount','UA-688646-3'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript">
-  google.load('search', '1');
-  google.setOnLoadCallback(function() {
-  google.search.CustomSearchControl.attachAutoCompletion('009014880959573829355:b8mecw7atko', document.getElementById('q'), 'cse-search-box'); });
-  function submitsearch() {
-    _gaq.push(['_trackEvent', 'Footer', 'Search', 'Bottom']);
-    if (!document.getElementById("q").value) {
-      alert("Looking for something on trimet.org? Type it in the white box and click the 'Search' button.");
-    }
-    else {
-      document.forms["cse-search-box"].submit();
-    }
-  }
-</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//trimet.org/global/js/menu.min.js?ver=2.0.11"></script>
+		<script src="//trimet.org/global/js/basic.min.js?ver=2.0.11"></script>
+		<script src="//trimet.org/global/js/embar.min.js?ver=2.0.11"></script>
+		<script type="text/javascript">
+			// google analytics 
+			var _gaq=[['_setAccount','UA-688646-3'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+			</script>
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<script type="text/javascript">
+			google.load('search', '1');
+			google.setOnLoadCallback(function() {
+			google.search.CustomSearchControl.attachAutoCompletion('009014880959573829355:b8mecw7atko', document.getElementById('q'), 'cse-search-box'); });
+			function submitsearch() {
+			_gaq.push(['_trackEvent', 'Footer', 'Search', 'Bottom']);
+			if (!document.getElementById("q").value) {
+			alert("Looking for something on trimet.org? Type it in the white box and click the 'Search' button.");
+			}
+			else {
+			document.forms["cse-search-box"].submit();
+			}
+			}
+		</script>
 </div><!-- #application -->
-<!-- InstanceBeginEditable name="Bottom" -->
-<script type="text/javascript" src="https://trimet.org/about/dashboard/charts.js"></script><!-- load the charts -->
-<!-- InstanceEndEditable -->
-
-
 
 </body>
-
-
-
 </html>
